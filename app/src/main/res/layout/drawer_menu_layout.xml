@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E88E5"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/homeDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:drawableLeft="@drawable/ic_home"
+                android:drawablePadding="15dp"
+                android:elevation="5dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="@string/home"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#64B5F6"
+                android:drawableLeft="@drawable/ic_action_user"
+                android:drawablePadding="15dp"
+                android:elevation="5dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="@string/profile"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/settingDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:drawableLeft="@drawable/ic_action_setting"
+                android:drawablePadding="15dp"
+                android:elevation="5dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="@string/settings"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/changeLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#64B5F6"
+                android:drawableLeft="@drawable/ic_action_language"
+                android:drawablePadding="15dp"
+                android:elevation="5dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="@string/changeLanguage"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shareappDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:drawableLeft="@drawable/ic_action_share"
+                android:drawablePadding="15dp"
+                android:elevation="5dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="@string/Share"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#64B5F6"
+                android:drawableLeft="@drawable/ic_action_rate"
+                android:drawablePadding="15dp"
+                android:elevation="5dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="@string/rating"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:drawableLeft="@drawable/ic_action_logout"
+                android:drawablePadding="15dp"
+                android:elevation="5dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="@string/logout"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

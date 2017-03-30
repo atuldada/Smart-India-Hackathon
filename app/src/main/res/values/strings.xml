@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="Krishi_labh">Krishi_Labh</string>
+    <string name="storeName">Store Name</string>
+    <string name="locationMain">Location</string>
+    <string name="updateDemand">Update Demand</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="fpiNearby">FPI Nearby</string>
+    <string name="Payment">Payment</string>
+    <string name="Purchase_History">Purchase History</string>
+    <string name="fpiName">FPI Name</string>
+    <string name="ItemName">Item Name</string>
+    <string name="Quantity">Quantity in Kg</string>
+    <string name="ten">10</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="changeLanguage">Change Language</string>
+    <string name="Share">Share this App</string>
+    <string name="rating">Rate this App</string>
+    <string name="logout">Log OUT</string>
+    <string name="matchPercent">Match Percent</string>
+    <string name="GainPercent">Gain Percent</string>
+    <string name="MatchNo.">80%</string>
+    <string name="GainNo.">100%</string>
+
+
+</resources>
