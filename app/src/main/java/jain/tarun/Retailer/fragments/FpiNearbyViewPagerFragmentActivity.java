@@ -1,7 +1,9 @@
-package jain.tarun.demo.fragments;
+package jain.tarun.Retailer.fragments;
 
-import android.content.Intent;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -9,13 +11,22 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
-import jain.tarun.demo.R;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import jain.tarun.Retailer.R;
 
 /**
  * Created by User on 3/29/2017.
@@ -26,6 +37,7 @@ public class FpiNearbyViewPagerFragmentActivity extends FragmentActivity {
     Toolbar toolbar;
     TabLayout tabLayout;
     ImageView arrowBack;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +54,7 @@ public class FpiNearbyViewPagerFragmentActivity extends FragmentActivity {
                 onBackPressed();
             }
         });
+
     }
 
     private void setupViewPager(ViewPager viewPager) {
@@ -50,6 +63,7 @@ public class FpiNearbyViewPagerFragmentActivity extends FragmentActivity {
         adapter.addFragment(new AllFpiFragment(), "All FPI Nearby");
         viewPager.setAdapter(adapter);
     }
+
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
@@ -81,3 +95,6 @@ public class FpiNearbyViewPagerFragmentActivity extends FragmentActivity {
     }
 
 }
+
+
+

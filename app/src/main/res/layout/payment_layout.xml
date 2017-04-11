@@ -6,38 +6,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <LinearLayout
+
+        <RelativeLayout
+            android:id="@+id/Up"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="#29b6f6"
-            android:id="@+id/Up"
-            android:elevation="10dp"
+            android:elevation="10dp">
 
-            >
             <ImageView
+                android:id="@+id/pay_back_payment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_action_arrowback"
-                android:padding="5dp"
-                android:layout_marginStart="15dp"
-                android:id="@+id/dash_back"/>
+                android:padding="15dp"
+                android:src="@drawable/ic_action_arrowback" />
+
             <TextView
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/dashboard"
-                android:textStyle="bold"
+                android:layout_centerInParent="true"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:text="@string/my_payment"
                 android:textColor="@android:color/white"
-                android:textSize="40dp"/>
-        </LinearLayout>
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
         <include layout="@layout/list_view" />
     </LinearLayout>
-
 
 
 </android.support.design.widget.CoordinatorLayout>

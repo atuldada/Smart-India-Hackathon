@@ -1,27 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="jain.tarun.demo">
-
+    package="jain.tarun.Retailer">
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyArbYLphlJODJfiBeDh8y4RY-5A3kNSKwU" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_ILgsfZCZoFIKMb"
+            />
+
+        <activity android:name="jain.tarun.Retailer.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+
+        </activity>
+
+
+        <activity android:name="jain.tarun.Retailer.fragments.FpiNearbyViewPagerFragmentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity >
+
+        <activity android:name="jain.tarun.Retailer.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            </activity>
+        <activity android:name=".DashBoardFragmentActivity"></activity>
+        <activity android:name=".UpadteItemActivity">
+
+
         </activity>
-        <activity android:name=".fragments.FpiNearbyViewPagerFragmentActivity">
+
+        <activity android:name=".Apdator.login_main_activity">
+
+
+            </activity>
+            <activity android:name=".PaymentActivity2">
+
+            </activity>
+
+        <activity android:name=".PaymentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".FpiInfo">
+
+        </activity>
+
+
     </application>
 
 </manifest>

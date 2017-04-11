@@ -1,4 +1,4 @@
-package jain.tarun.demo.Apdator;
+package jain.tarun.Retailer.Apdator;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,7 +7,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import jain.tarun.demo.R;
+import java.util.ArrayList;
+
+import jain.tarun.Retailer.R;
 
 /**
  * Created by User on 3/29/2017.
@@ -16,9 +18,9 @@ import jain.tarun.demo.R;
 public class CustomAllFpiAdapter extends BaseAdapter {
     LayoutInflater newinflator;
     Context context;
-    String names[];
-    String LOC[];
-    public CustomAllFpiAdapter(Context context,String nam[],String locations[]){
+    ArrayList<String> names=new ArrayList<String>();
+    ArrayList <String> LOC=new ArrayList<String>();
+    public CustomAllFpiAdapter(Context context,ArrayList<String> nam,ArrayList<String> locations){
         this.context=context;
         this.names=nam;
         this.LOC=locations;
@@ -27,7 +29,7 @@ public class CustomAllFpiAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return names.length;
+        return names.size();
     }
 
     @Override
@@ -45,8 +47,8 @@ public class CustomAllFpiAdapter extends BaseAdapter {
         convertView=newinflator.inflate(R.layout.all_fpi_nearby,null);
         TextView name=(TextView)convertView.findViewById(R.id.Fpi_name);
         TextView location=(TextView)convertView.findViewById(R.id.loca_fpi);
-        name.setText(names[position]);
-        location.setText(LOC[position]);
+        name.setText(names.get(position));
+        location.setText(LOC.get(position));
 
         return convertView;
     }

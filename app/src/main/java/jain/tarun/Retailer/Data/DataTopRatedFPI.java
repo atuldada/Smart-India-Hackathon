@@ -1,4 +1,4 @@
-package jain.tarun.demo.Data;
+package jain.tarun.Retailer.Data;
 
 /**
  * Created by User on 3/29/2017.

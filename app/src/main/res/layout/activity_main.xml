@@ -8,62 +8,85 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#1E88E5"
-        android:orientation="vertical"
-        android:padding="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
         android:elevation="5dp"
+        android:weightSum="5"
         >
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_action_name"
+            android:layout_gravity="center|center_vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
             android:layout_height="wrap_content"
 
-            android:animateLayoutChanges="true"
-            android:elevation="10dp"
-            android:padding="1dp">
+            android:layout_centerInParent="true"
+            android:weightSum="3"
+            android:layout_marginStart="15dp"
+            >
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2.5"
+                android:layout_height="wrap_content"
+                android:hint="Search for products"
+                android:id="@+id/editText"
+                android:background="@drawable/searchbarbackground"
+                android:padding="15dp"
+                />
+
+
+                />
+        <!--    <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_action_voice"
+                android:padding="5dp"
+                android:id="@+id/voiceSearch"/>
+                -->
+            <ai.api.ui.AIButton
+                android:id="@+id/micButton"
+                style="@style/ApiAi.Microphone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0.5"
+                android:onClick=""
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp">
+
 
             <ImageButton
-                android:id="@+id/menu"
+                android:id="@+id/notification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/ic_action_name"
-                 />
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_search"
+                android:layout_gravity="center"
+                />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:gravity="center"
-                android:text="@string/Krishi_labh"
-                android:textColor="@android:color/white"
-                android:textSize="25dp"
-                android:textStyle="bold" />
+        </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true">
-
-
-                <ImageButton
-                    android:id="@+id/notification"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/ic_notification"
-                     />
-
-                <ImageButton
-                    android:id="@+id/search"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/ic_search"
-                     />
-            </LinearLayout>
-        </RelativeLayout>
 
     </LinearLayout>
-
 
     <android.support.v4.widget.DrawerLayout
         android:layout_width="match_parent"
@@ -172,7 +195,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:weightSum="3">
+                    android:weightSum="3"
+                    android:onClick="Update_Demand">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -219,6 +243,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:weightSum="3"
+                android:onClick="DashBoard"
                 android:orientation="vertical">
                 <ImageView
                     android:layout_width="match_parent"

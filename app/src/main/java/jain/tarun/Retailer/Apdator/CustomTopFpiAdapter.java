@@ -1,21 +1,15 @@
-package jain.tarun.demo.Apdator;
+package jain.tarun.Retailer.Apdator;
 
-import android.app.Fragment;
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import java.util.ArrayList;
 
-import java.util.Collections;
-import java.util.List;
-
-import jain.tarun.demo.Data.DataTopRatedFPI;
-import jain.tarun.demo.R;
+import jain.tarun.Retailer.R;
 
 /**
  * Created by User on 3/29/2017.
@@ -23,24 +17,24 @@ import jain.tarun.demo.R;
 
 public class CustomTopFpiAdapter extends BaseAdapter {
 
-    LayoutInflater Newinflator;
-    Context context;
-    String Title[];
-    String Loc[];
-    String Matchpercent[];
-    String Gainpercent[];
+    public LayoutInflater Newinflator;
+    public Context context;
+    public ArrayList<String> listItems=new ArrayList<>();
+    public ArrayList<String> Loc=new ArrayList<>();
+    public String Matchpercent[];
+    public String Gainpercent[];
 
-    public CustomTopFpiAdapter(Context context,String T[],String L[],String M[],String G[]){
+    public CustomTopFpiAdapter(Context context,ArrayList<String> listItems,ArrayList<String> Loc,String M[],String G[]){
         this.context=context;
-        this.Title=T;
-        this.Loc=L;
+        this.listItems=listItems;
+        this.Loc=Loc;
         this.Matchpercent=M;
         this.Gainpercent=G;
         Newinflator= LayoutInflater.from(context);
     }
     @Override
     public int getCount() {
-        return Title.length;
+        return (listItems.size() - 1 );
     }
 
     @Override
@@ -60,8 +54,8 @@ public class CustomTopFpiAdapter extends BaseAdapter {
         TextView location=(TextView)convertView.findViewById(R.id.location_topFpi);
         TextView machpercent=(TextView)convertView.findViewById(R.id.Matchpercent);
         TextView gainpercent=(TextView)convertView.findViewById(R.id.Gainpercent);
-        title.setText(Title[position]);
-        location.setText(Loc[position]);
+        title.setText(listItems.get(position));
+        location.setText(Loc.get(position));
         machpercent.setText(Matchpercent[position]);
         gainpercent.setText(Gainpercent[position]);
         return convertView;

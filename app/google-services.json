@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "605801668652",
+    "firebase_url": "https://smartindiahackathon-beef5.firebaseio.com",
+    "project_id": "smartindiahackathon-beef5",
+    "storage_bucket": "smartindiahackathon-beef5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605801668652:android:a09616d91bd8e77e",
+        "android_client_info": {
+          "package_name": "com.example.atul.smartindiahackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605801668652-62ubqoh9fhf2cgtlsulpptk2157u5mo9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.atul.smartindiahackathon",
+            "certificate_hash": "51812acccf7e98cef26033518d16565522fa817d"
+          }
+        },
+        {
+          "client_id": "605801668652-uvit92p8nd3rdsuicgnahte6b5e5m9kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9tcPb1Dq7OBq8eQnGk87SRzXMOkRZH0w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605801668652-uvit92p8nd3rdsuicgnahte6b5e5m9kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605801668652:android:2a81894a31eb8ce8",
+        "android_client_info": {
+          "package_name": "jain.tarun.Retailer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605801668652-20983cva9am8n0aarnireqqef4ppmffa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jain.tarun.Retailer",
+            "certificate_hash": "51812acccf7e98cef26033518d16565522fa817d"
+          }
+        },
+        {
+          "client_id": "605801668652-uvit92p8nd3rdsuicgnahte6b5e5m9kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9tcPb1Dq7OBq8eQnGk87SRzXMOkRZH0w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605801668652-uvit92p8nd3rdsuicgnahte6b5e5m9kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

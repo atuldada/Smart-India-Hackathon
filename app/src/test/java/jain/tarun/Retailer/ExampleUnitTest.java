@@ -1,4 +1,4 @@
-package jain.tarun.demo;
+package jain.tarun.Retailer;
 
 import org.junit.Test;
 
